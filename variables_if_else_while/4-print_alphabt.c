@@ -18,9 +18,9 @@ while (c <= 'z')
 {
 
 if (c == 'r')
-c += 1;
+c ++;
 if (c == 'e')
-c += 1;
+c ++;
 putchar(c);
 c++;
 }
