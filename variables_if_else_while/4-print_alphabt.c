@@ -17,7 +17,7 @@ char c = 'a';
 while (c <= 'z')
 {
 
-if (c == 'r')
+if (c == 'q')
 c ++;
 if (c == 'e')
 c ++;
