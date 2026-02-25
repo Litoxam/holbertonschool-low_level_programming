@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _abs - check if c is a letter
+ * _abs - check absolute
  *
  * @n: The characters to check;
  *
- * Return: if n is positive, return 1 and +, else return 0 and -
- * if =0 return 0 and 0
+ * Return: if n is negative, return its absolute; else returns n
  */
 int _abs(int n)
 {
