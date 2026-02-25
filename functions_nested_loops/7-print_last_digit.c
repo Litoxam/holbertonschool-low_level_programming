@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_last_digit - check if c is a letter
+ * print_last_digit - check if c is a letter
  *
  * @n: The characters to check;
  *
