@@ -1,0 +1,30 @@
+#include "main.h"
+
+
+/**
+ * print_diagonal - prints diagonals
+ *
+ * @n: number of / to print
+ *
+ * Return: no return
+ */
+
+void print_diagonal(int n)
+{
+	int s;
+	int i;
+
+	if (n <= 0)
+	_putchar('\n');
+
+	for (i = 1; i <= n; i++)
+	{
+	for (s = 0; s < i; s++)
+		{
+		_putchar(' ');
+		}
+	_putchar('/');
+	_putchar('\n');
+	}
+}
+
