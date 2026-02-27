@@ -71,15 +71,15 @@ scanf("%d", &choice);
 	{	
 		int action;
 				do {
-			int num1, num2;
+			float num3, num4;
 			printf("First number: ");
-			scanf("%d", &num1);
+			scanf("%f", &num3);
 			printf("Second number: ");
-			scanf("%d", &num2);
-			if (num2 == 0)
+			scanf("%f", &num4);
+			if (num4 == 0)
 				printf("Division by zero impossible!\n");
 			else
-				printf("Result: %d\n", num1 / num2);
+				printf("Result: %f\n", num3 / num4);
 			printf("1) Again?\n");
 			printf("2) Back to menu\n");
 			scanf("%d", &action);
