@@ -9,11 +9,11 @@
  */
 
 
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
 int temp = 0;
 
-	temp = *b;
+temp = *b;
 	*b = *a;
 	*a = temp;
 }
