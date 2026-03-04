@@ -18,11 +18,17 @@ int _atoi(char *s)
 	{
 		if (digit == 0)/*only signs before first digit*/
 		{
-		if (s[here] == '-')
-			sign = sign * (-1); /*change the sign if '-'*/
-		if (s[here] == '+')
-			sign = sign * (1); /*doesn't change the sign if '+'*/
-		return (0);
+			if (s[here] == '-')
+			{
+				sign = sign * (-1); /*change the sign if '-'*/
+				here++;
+			}
+
+			if (s[here] == '+')
+			{
+				sign = sign * (1);
+				here++;
+			} /*doesn't change the sign if '+'*/
 		}
 
 		if (s[here] >= '0' && s[here] <= '9') /*if digit detected*/
@@ -32,7 +38,7 @@ int _atoi(char *s)
 		}
 		else if (digit == 1)
 		{
-		break;
+			break; /* stops if digits end*/
 		}
 		here++;
 	}
