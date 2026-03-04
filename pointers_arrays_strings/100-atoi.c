@@ -9,10 +9,10 @@
 
 int _atoi(char *s)
 {
-	int here = 0;
-	int sign = 1;
-	int num = 0;
-	int digit = 0;
+	int here = 0; /* where am i in the string*/
+	int sign = 1; /* what sign will be the num*/
+	int num = 0; /* final result*/
+	int digit = 0; /* detects if we met a digit yet*/
 
 	while (s[here] != '\0') /*loop till \0*/
 	{
@@ -21,14 +21,11 @@ int _atoi(char *s)
 			if (s[here] == '-')
 			{
 				sign = sign * (-1); /*change the sign if '-'*/
-
 			}
-
 			if (s[here] == '+')
 			{
-				sign = sign * (1);
-
-			} /*doesn't change the sign if '+'*/
+				sign = sign * (1); /*doesn't change the sign if '+'*/
+			}
 		}
 
 		if (s[here] >= '0' && s[here] <= '9') /*if digit detected*/
@@ -42,6 +39,7 @@ int _atoi(char *s)
 		}
 		here++;
 	}
-
+	
 	return (num * sign); /* change the final sign*/
+	_putchar('\n');
 }
