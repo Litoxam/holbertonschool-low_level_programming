@@ -13,7 +13,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int num = 0;
 
-	while (s[here] != '\0' && (s[here] >= '0' && s[here] <= '9')) /*detect the first digit*/
+	while (s[here] != '\0' && (s[here] < '0' || s[here] > '9')) /*detect the first digit*/
 	{
 		if (s[here] == '-')
 			sign = sign * (-1); /*change the sign everytime there is a '-'*/
