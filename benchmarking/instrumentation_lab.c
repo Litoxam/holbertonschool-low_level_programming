@@ -59,6 +59,7 @@ int main(void)
 	clock_t total_1, total_2;
 	clock_t build_1, build_2;
 	clock_t process_1, process_2;
+	clock_t reduce_1, reduce_2;
 
 	double total_time;
 	double build_time;
@@ -84,10 +85,6 @@ int main(void)
 	process_time = (double)(process_2 - process_1) / CLOCKS_PER_SEC;
 	reduce_time = (double)(reduce_2 - reduce_1) / CLOCKS_PER_SEC;
 	total_time = (double)(total_2 - total_1) / CLOCKS_PER_SEC;
-
-	build_dataset();
-	process_dataset();
-	checksum = reduce_checksum();
 
 	if (checksum == 0ul)
 		printf("impossible\n");
