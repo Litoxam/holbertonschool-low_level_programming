@@ -32,8 +32,9 @@ int _atoi(char *s)
 			num = num * 10 + (s[here] - '0'); /*turns a char into int*/
 		}
 		else if (digit == 1)
-			break;
-
+		{
+			return (0);
+		}
 		here++;
 	}
 
