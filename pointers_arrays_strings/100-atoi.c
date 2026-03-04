@@ -21,13 +21,13 @@ int _atoi(char *s)
 			if (s[here] == '-')
 			{
 				sign = sign * (-1); /*change the sign if '-'*/
-				here++;
+
 			}
 
 			if (s[here] == '+')
 			{
 				sign = sign * (1);
-				here++;
+
 			} /*doesn't change the sign if '+'*/
 		}
 
