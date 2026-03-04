@@ -16,7 +16,7 @@ int _atoi(char *s)
 
 	while (s[here] != '\0') /*loop till \0*/
 	{
-		if (s[here] == '-')
+		if (s[here] == '-' && digit == 0)/*only signs before first digit*/
 			sign = sign * (-1); /*change the sign if '-'*/
 
 		if (s[here] >= '0' && s[here] <= '9') /*if digit detected*/
