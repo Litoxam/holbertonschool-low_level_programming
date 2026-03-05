@@ -13,6 +13,10 @@ char *cap_string(char *str)
 	int scan;
 	char separators[] = " \t\n,;.!?\"(){}";
 
+
+if (str[0] >= 'a' && str[0] <= 'z')
+	str[0] = str[0] - 32;
+
 for (i = 0; str[i] != '\0'; i++) /*check the string*/
 {
 	for (scan = 0; separators[scan] != '\0'; scan++) /*check if separator*/
