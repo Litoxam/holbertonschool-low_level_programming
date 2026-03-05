@@ -1,31 +1,32 @@
 #include "main.h"
 
 /**
- * *leet - change some char into numbers
- * @str : string to change
+ * *leet - change a string into 1337
+ * @str: string to encode
  *
- * Return: str
+ * Return: the encoded string
  */
-
 char *leet(char *str)
 {
 	int i;
 	int scan;
-	char leet[] = "aeotlAEOTL";
-	char change[] = "4307143071";
+	char *leet = "aAeEoOtTlL";
+	char *change = "4433007711";
 
-for (i = 0; str[i] != '\0'; i++) /*check the string*/
-{
-	for (scan = 0; leet[scan] != '\0'; scan++) 
+	i = 0;
+	while (str[i] != '\0') /* parcourt la string */
 	{
-	if (str[i] == leet[scan]) /*if it's in the list*/
+		scan = 0;
+		while (leet[scan] != '\0') /* parcours la string leet*/
 		{
-		str[i] = change[scan]; /*into a number*/
+			if (str[i] == leet[scan]) /* Et la compare avec str */
+			{
+				str[i] = change[scan];/*si égales, change en chiffre*/
+			}
+			scan++;
 		}
+		i++;
 	}
-}
 
-return (str);
-
-
+	return (str);
 }
