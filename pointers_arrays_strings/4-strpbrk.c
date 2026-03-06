@@ -13,17 +13,15 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 
-	for (i = 0; s[i] != '\0'; i++) /* on parcourt la string*/
+for (i = 0; s[i] != '\0'; i++) /* on parcourt la string*/
 	{
-		for (j = 0; accept[j] != '\0'; j++) /*on cherche un char de la liste*/
+	for (j = 0; accept[j] != '\0'; j++) /*on cherche un char de la liste*/
+	{
+		if (s[i] == accept[j])
 		{
-			if (s[i] == accept[j])
-			{
-			    return (&s[i]); /*trouvé, on retourne l'adresse*/
-			}
+			return (&s[i]); /*trouvé, on retourne l'adresse*/
 		}
 	}
-
-
+	}
 	return (0);
 }
