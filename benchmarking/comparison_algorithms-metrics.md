@@ -4,9 +4,13 @@
 ## Run 1
 ```
 Naive algorithm result: 625025000
+
 Naive algorithm time: 0.976509 seconds
+
 Single-pass algorithm result: 25000
+
 Single-pass algorithm time: 0.000040 seconds
+
 ```
 
 ## Run 2
