@@ -5,7 +5,7 @@
  * _isdigit - int a character.
  * @c: character
  *
- * Return: 1 if digit, 0 if anything else
+ * Return: 1 if digit, 0 if any else
  */
 
 int _isdigit(int c)

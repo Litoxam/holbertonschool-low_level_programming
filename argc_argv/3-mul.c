@@ -12,15 +12,15 @@
 int main(int argc, char *argv[])
 {
 	int result;
+	int i;
 	(void)argc;
 
-	if (argc == 3)
+	for (i = 0; i < argc, i++)
 	{
-	result = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", result);
+	result += atoi(argv[i])
 	}
 
-	if (argc != 3)
+	if (argv[i] < 48 && argv[i] > 57 )
 	{
 		printf("Error\n");
 		return (1);

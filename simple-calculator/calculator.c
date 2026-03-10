@@ -19,63 +19,70 @@ scanf("%d", &choice);
 
 		switch (choice)
 		{
-	case 1:
-	{
-		int action;
+		case 1:
+			{
+			int action;
 				do {
-			int num1, num2;
-			printf("First number: ");
-			scanf("%d", &num1);
-			printf("Second number: ");
-			scanf("%d", &num2);
-			printf("Result: %d\n", num1 + num2);
-			printf("1) Again?\n");
-			printf("2) Back to menu\n");
-			scanf("%d", &action);
-				} while (action == 1);
-		break;
-	}
+					int num1, num2;
+					printf("First number: ");
+					scanf("%d", &num1);
+					printf("Second number: ");
+					scanf("%d", &num2);
+					printf("Result: %d\n", num1 + num2);
+					printf("1) Again?\n");
+					printf("2) Back to menu\n");
+					scanf("%d", &action);
+
+					
+				if (scanf("%d", &num1) != 1)
+    {
+        printf("Erreur : vous devez entrer un nombre.\n");
+        return 0;
+    }
+					} while (action == 1);
+			break;
+			}
 	case 2:
-	{
+			{
 		int action;
 				do {
-		int num1, num2;
-		printf("First number: ");
-		scanf("%d", &num1);
-		printf("Second number: ");
-		scanf("%d", &num2);
-		printf("Result: %d\n", num1 - num2);
-		printf("1) Again?\n");
-		printf("2) Back to menu\n");
-		scanf("%d", &action);
-				} while (action == 1);
-		break;
-	}
+					int num1, num2;
+					printf("First number: ");
+					scanf("%d", &num1);
+					printf("Second number: ");
+					scanf("%d", &num2);
+					printf("Result: %d\n", num1 - num2);
+					printf("1) Again?\n");
+					printf("2) Back to menu\n");
+					scanf("%d", &action);
+					} while (action == 1);
+			break;
+			}
 	case 3:
-	{
+			{
 		int action;
 				do {
 			int num1, num2;
-			printf("First number: ");
-			scanf("%d", &num1);
-			printf("Second number: ");
-			scanf("%d", &num2);
-			printf("Result: %d\n", num1 * num2);
-			printf("1) Again?\n");
-			printf("2) Back to menu\n");
-			scanf("%d", &action);
+				printf("First number: ");
+				scanf("%d", &num1);
+				printf("Second number: ");
+				scanf("%d", &num2);
+				printf("Result: %d\n", num1 * num2);
+				printf("1) Again?\n");
+				printf("2) Back to menu\n");
+				scanf("%d", &action);
 				} while (action == 1);
-		break;
-	}	
+			break;
+			}	
 	case 4:
-	{	
+			{	
 		int action;
 				do {
-			float num3, num4;
-			printf("First number: ");
-			scanf("%f", &num3);
-			printf("Second number: ");
-			scanf("%f", &num4);
+				float num3, num4;
+				printf("First number: ");
+				scanf("%f", &num3);
+				printf("Second number: ");
+				scanf("%f", &num4);
 			if (num4 == 0)
 				printf("Division by zero impossible!\n");
 			else
@@ -84,8 +91,8 @@ scanf("%d", &choice);
 			printf("2) Back to menu\n");
 			scanf("%d", &action);
 				} while (action == 1);
-		break;
-	}
+			break;
+			}
 	case (0):
 	printf("Bye Mathieu !\n");
 }
