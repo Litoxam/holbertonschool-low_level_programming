@@ -9,7 +9,7 @@
  * @size: size of the array
  * @c: char initialized
  *
- * Return: NULL it size à or if malloc fails; return str .
+ * Return: NULL if size == 0 or if malloc fails; return str.
  */
 
 
