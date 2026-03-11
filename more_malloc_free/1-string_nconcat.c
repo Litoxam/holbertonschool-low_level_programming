@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 
 /**
@@ -17,9 +16,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int length1 = 0;
-	int length2 = 0;
-	int i, j;
+	unsigned int length1 = 0, length2 = 0, i, j;
 	char *copy;
 
 /* si les strings sont nulles, on les considère vides*/
