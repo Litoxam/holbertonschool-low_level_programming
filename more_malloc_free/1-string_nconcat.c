@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 /*si n < length 2, on va jusqu'à n sur la string 2*/
 	if (n < length2)
 		length2 = n;
-	
+
 /* on réserve notre espace*/
 copy = malloc(sizeof(char) * (length1 + length2 + 1));
 
