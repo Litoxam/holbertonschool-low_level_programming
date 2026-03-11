@@ -17,7 +17,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	 *
 	 * et accède au champ name, age et owner.
 	 */
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+
+	if (d != NULL) /*vérification si le pointeur n'est pas NULL*/
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
