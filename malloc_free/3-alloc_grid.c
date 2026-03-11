@@ -35,13 +35,13 @@ for (i = 0; i < height; i++)
 
 	if (grid[i] == NULL)
 	{
-		while (i >= 0)
-			{
-				free(grid[i]);
-				i--;
-			}
-		free(grid);
-		return (NULL);
+	while (i >= 0)
+		{
+		free(grid[i]);
+		i--;
+		}
+	free(grid);
+	return (NULL);
 	}
 
 	for (j = 0; j < width; j++)
