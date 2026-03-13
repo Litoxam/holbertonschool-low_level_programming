@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /*we can not use strlen and strcopy, so we create ours*/
