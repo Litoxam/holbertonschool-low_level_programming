@@ -57,37 +57,37 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d;
+	dog_t *temp;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
 
 	/* 1. Allouer la structure */
-	d = malloc(sizeof(dog_t));
-	if (d == NULL)
+	temp = malloc(sizeof(dog_t));
+	if (temp == NULL)
 		return (NULL);
 
 	/* 2. Allouer et copier le nom */
-	d->name = malloc(_strlen(name) + 1);
-	if (d->name == NULL)
+	temp->name = malloc(_strlen(name) + 1);
+	if (temp->name == NULL)
 	{
-		free(d);
+		free(temp);
 		return (NULL);
 	}
-	_strcpy(d->name, name);
+	_strcpy(temp->name, name);
 
 	/* 3. Allouer et copier le owner */
-	d->owner = malloc(_strlen(owner) + 1);
-	if (d->owner == NULL)
+	temp->owner = malloc(_strlen(owner) + 1);
+	if (temp->owner == NULL)
 	{
-		free(d->name); /* On libère ce qu'on a alloué si fail */
-		free(d);
+		free(temp->name); /* On libère ce qu'on a alloué si fail */
+		free(temp);
 		return (NULL);
 	}
-	_strcpy(d->owner, owner);
+	_strcpy(temp->owner, owner);
 
 	/* 4. Assigner l'âge */
-	d->age = age;
+	temp->age = age;
 
-	return (d);
+	return (temp);
 }
