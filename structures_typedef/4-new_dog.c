@@ -10,44 +10,39 @@
  * Return: temp
  */
 
-	dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-
-	dog_t *temp; /*pointeur temporaire*/
-	char *new_name, *new_owner; /*copie de name et owner*/
+	dog_t *d;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
 
-	temp = malloc(sizeof(dog_t));/*alloue la même taille que la struct dog*/
-		if (temp == NULL)
-			return (NULL);
+	/* 1. Allouer la structure */
+	d = malloc(sizeof(dog_t));
+	if (d == NULL)
+		return (NULL);
 
-	new_name = malloc(strlen(name) + 1);/*alloue la taile de string + \0*/
-
-		if (new_name == NULL)
-		{
-			free(temp);
-			return (NULL);
-		}
-	strcpy(new_name, name); /*on copie name dans new_name*/
-
-	new_owner = malloc(strlen(owner) + 1);/*alloue la taile de string + \0*/
-
-	if (new_owner == NULL)
+	/* 2. Allouer et copier le nom */
+	d->name = malloc(strlen(name) + 1);
+	if (d->name == NULL)
 	{
-		free(new_name);
-		free(temp);
+		free(d);
 		return (NULL);
 	}
-	strcpy(new_owner, owner); /*on copie owner dans new_owner*/
+	strcpy(d->name, name);
 
-	temp->name = new_name;
-	temp->age = age;
-	temp->owner = new_owner;
+	/* 3. Allouer et copier le owner */
+	d->owner = malloc(strlen(owner) + 1);
+	if (d->owner == NULL)
+	{
+		free(d->name); /* On libère ce qu'on a alloué si fail */
+		free(d);
+		return (NULL);
+	}
+	strcpy(d->owner, owner);
 
-	return (temp);
+	/* 4. Assigner l'âge */
+	d->age = age;
+
+	return (d);
 }
-
-
-
