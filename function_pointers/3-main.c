@@ -15,12 +15,14 @@ int main(int argc, char *argv[])
 	int a, b;
 	int (*f)(int, int);
 
+	/*si il n'y a pas strictement 4 arguments, error exit*/
 	if (argc != 4)
 	{
 	printf("Error\n");
 	exit(98);
 	}
 
+	/*utilise la fonction qui check l'opérateur*/
 	f = get_op_func(argv[2]);
 
 
@@ -31,6 +33,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
+	/*convertit les entrée en nombre entier*/
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
