@@ -19,7 +19,19 @@ int main(int argc, char *argv[])
 	f = get_op_func(argv[2]);
 
 	if (argc != 4)
-		exit(1);
+		exit(98);
+
+	if (f == NULL)
+	{
+		printf("Error\n");
+		exit (98);
+	}
+
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
+	{
+		printf("Error\n");
+		exit (100);
+	}
 
 	printf("%d\n", f(a, b));
 
