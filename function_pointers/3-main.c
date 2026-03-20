@@ -21,19 +21,19 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 		exit(98);
 
-	
+
 	/*si l'opérateur n'est pas dans la liste*/
 		if (f == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	/*si on divise ou module par 0, erreur 100*/
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 
 	printf("%d\n", f(a, b));
