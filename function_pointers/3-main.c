@@ -13,13 +13,17 @@
 int main(int argc, char *argv[])
 {
 	int (*f)(int, int);
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
 
 	f = get_op_func(argv[2]);
 
+	int a = atoi(argv[1]);
+	int b = atoi(argv[3]);
+
 	if (argc != 4)
-		exit(98);
+	{
+	printf("Error\n");
+	exit(98);
+	}
 
 
 	/*si l'opérateur n'est pas dans la liste*/
