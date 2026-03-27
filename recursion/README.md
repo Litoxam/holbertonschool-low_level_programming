@@ -1,3 +1,8 @@
+# Recursion
+Learning how to solve problems by making functions call themselves.
+* Base cases vs. recursive steps.
+* Computing factorials, exponents, and string lengths recursively.
+
 # Recursion Project
 
 Utilisation de l'analogie avec le film Inception.
