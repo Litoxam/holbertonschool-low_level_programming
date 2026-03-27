@@ -50,4 +50,8 @@ This is a **Memory Leak**.
 * **The Cause**: `person_free_partial` only frees the struct itself.
 * **The Result**: The pointer to the name is destroyed. The string stays on the Heap forever. We lost "Ownership" of that memory.
 
-###
+### AI Critical Review
+**AI Thought**: `free(alice)` automatically frees everything inside the structure.
+**My Correction**: This is false. In C, `free` is not recursive. You must manually free every pointer *inside* a struct before freeing the struct itself. 
+
+---
