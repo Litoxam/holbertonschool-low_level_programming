@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - add a node at the end of a list
+ * free_dlistint - free a list
  * @head: head of the list
- * @n: data
+ *
  *
  * Return: pointer to the new node
  */
