@@ -11,6 +11,7 @@ This repository contains my projects developed at **Holberton School** regarding
 | [**ai_memory_visualizer**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/ai_memory_visualizer_valgrind_tracer/analysis) | Crash analysis and memory visualization using Valgrind. |
 | [**argc_argv**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/argc_argv) | Handling command-line arguments in C. |
 | [**benchmarking**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/benchmarking) | Performance testing and execution time measurement. |
+| [**doubly-linked-lists**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/doubly_linked_lists) | Implementation and manipulation of doubly linked lists. |
 | [**dynamic_analysis**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/dynamic_analysis) | Dynamic program analysis and requirements handling. |
 | [**function_pointers**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/function_pointers) | Using and implementing pointers to functions. |
 | [**functions_nested_loops**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/functions_nested_loops) | Basics of functions and nested loop structures. |
