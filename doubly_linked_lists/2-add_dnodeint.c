@@ -3,9 +3,9 @@
 /**
  * dlistint_len - returns the number of elements
  * @head: head of the list
- * @n: pointer to the new node
+ * @n: data
  *
- * Return: no return
+ * Return: pointer to the new node
  */
 
 
@@ -15,7 +15,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
-		return NULL;
+		return (NULL);
 
 	new->n = n;
 	new->prev = NULL;
