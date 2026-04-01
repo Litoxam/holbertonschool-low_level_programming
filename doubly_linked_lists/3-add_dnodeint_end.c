@@ -23,7 +23,9 @@ new->next = NULL;
 
 	if (*head == NULL)
 	{
-		return (NULL);
+		*head = new;
+		new->prev = NULL;
+		return (new);
 	}
 
 	while (last->next != NULL)
