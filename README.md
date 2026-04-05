@@ -21,6 +21,7 @@ This repository contains my projects developed at **Holberton School** regarding
 | [**more_malloc_free**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/more_malloc_free) | Advanced dynamic memory management exercises. |
 | [**pointers_arrays_strings**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/pointers_arrays_strings) | Deep dive into pointer arithmetic, arrays, and strings. |
 | [**recursion**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/recursion) | Implementation of recursive functions and logic. |
+| [**secure_data_handling**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/secure_data_handling) | Memory-safe Session Management System |
 | [**simple-calculator**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/simple-calculator) | Development of a basic arithmetic calculator in C. |
 | [**singly_linked_lists**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/singly_linked_lists) | Implementation and manipulation of singly linked lists. |
 | [**structures_typedef**](https://github.com/Litoxam/holbertonschool-low_level_programming/tree/main/structures_typedef) | Defining and using custom data types with `struct` and `typedef`. |
