@@ -44,7 +44,7 @@ nwrote = write(STDOUT_FILENO, buffer, nread);
 close(fd);
 free(buffer);
 
-	if (n_wrote == -1 || n_wrote != n_read)
+	if (nwrote == -1 || nwrote != nread)
 		return (0);
 
 return (nwrote);
