@@ -33,7 +33,8 @@ int main(int argc, char *argv[])
 
 /*we write only, create if doesn't exist, truncate if it does, permission 664*/
 	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-		if (fd2 == -1)
+
+	if (fd2 == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 	exit(99);
