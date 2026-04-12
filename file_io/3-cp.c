@@ -33,6 +33,11 @@ int main(int argc, char *argv[])
 
 /*we write only, create if doesn't exist, truncate if it does, permission 664*/
 	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+		if (fd2 == -1)
+	{
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
+	exit(98);
+	}
 
 /*we read what's stocked into argv1, stocked in the buffer, 1024 chars*/
 	while ((nread = read(fd1, buffer, 1024)) > 0)
@@ -48,6 +53,12 @@ int main(int argc, char *argv[])
 		}
 	}
 
+	if (nread == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+		
 	/*if we can not close, error and printf, exit 100*/
 	if (close(fd1) == -1)
 	{
