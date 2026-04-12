@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
 	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 		if (fd2 == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
-	exit(98);
+	dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+	exit(99);
 	}
 
 /*we read what's stocked into argv1, stocked in the buffer, 1024 chars*/
